@@ -1,6 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: "AIzaSyAKlxtwOzGeC1FPaozg-cCqSAaIwtcCpDg" });
+const ai = new GoogleGenAI({ apiKey:  process.env.GOOGLE_Key});
 
 async function main() {
   const chat = ai.chats.create({
