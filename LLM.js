@@ -1,6 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import readlineSync from 'readline-sync';
-
+ const dotenv = require('dotenv');
+dotenv.config();
 const ai = new GoogleGenAI({ apiKey: process.env.GOOGLE_Key });
 
 
